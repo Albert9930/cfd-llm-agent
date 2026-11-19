@@ -1,0 +1,4 @@
+cases/aoa_*/
+data/
+__pycache__/
+.env
