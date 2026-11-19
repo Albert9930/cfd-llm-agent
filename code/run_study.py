@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "cases" / "airFoil2D"
 CASES = ROOT / "cases"
 U_MAG = 26.0
-AOA_MIN, AOA_MAX = -5.0, 20.0
+AOA_MIN, AOA_MAX = -8.0, 8
 
 
 def ignore_results(folder, names):
