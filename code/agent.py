@@ -1,14 +1,13 @@
 import json
 import sys
-
 import anthropic
-
 import db
 from run_study import run_case, AOA_MIN, AOA_MAX
+from config import CFG
 
-MODEL = "claude-sonnet-5-5"
-MAX_RUNS = 15        # simulation budget
-MAX_TURNS = 30       # safety limit for the loop
+MODEL = CFG["model"]
+MAX_RUNS = CFG["max_runs"]
+MAX_TURNS = CFG["max_turns"]
 
 SYSTEM = f"""You run CFD simulations of a 2D airfoil to answer the user's question.
 

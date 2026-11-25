@@ -4,14 +4,15 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from config import CFG, ROOT
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
-TEMPLATE = ROOT / "cases" / "airFoil2D"
-CASES = ROOT / "cases"
-U_MAG = 26.0
-AOA_MIN, AOA_MAX = -8.0, 8
+TEMPLATE = ROOT / CFG["template"]
+CASES = TEMPLATE.parent
+U_MAG = CFG["u_mag"]
+AOA_MIN, AOA_MAX = CFG["aoa_min"], CFG["aoa_max"]
 
 
 def ignore_results(folder, names):

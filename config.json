@@ -1,0 +1,9 @@
+{
+  "template": "cases/airFoil2D",
+  "u_mag": 26.0,
+  "aoa_min": -5,
+  "aoa_max": 20,
+  "model": "claude-sonnet-5-5",
+  "max_runs": 15,
+  "max_turns": 30
+}
