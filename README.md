@@ -106,6 +106,24 @@ requirements.txt
 - Above ~8° the steady solver does not converge on this mesh (onset of separation). Those angles are flagged as unreliable.
 - One parameter (angle of attack) so far.
 
+## Roadmap
+
+Done
+- [x] Run simulations from Python
+- [x] Save results in a database
+- [x] Run everything in Docker
+- [x] AI agent that picks which simulations to run
+- [x] Settings in one config file
+
+Next
+- [ ] Compare the agent with a normal sweep and a standard optimizer
+- [ ] Let the agent search the database itself
+- [ ] Reuse old results instead of running them again
+- [ ] Support other cases than airfoils (e.g. a ramp)
+- [ ] Offer different turbulence models to choose from
+- [ ] Compare different AI models (cost, quality)
+- [ ] Make the tool usable from other AI apps (MCP)
+
 ## Stack
 
 Python, Anthropic API (tool calling), OpenFOAM v2412, SQLite, Docker
